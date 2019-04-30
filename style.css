@@ -1,17 +1,107 @@
+html {
+
+
+    /*https://stackoverflow.com/questions/16841323/making-gradient-background-fill-page-with-css*/
+
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #70bg32;
+    background-repeat:no-repeat;
+    background: -webkit-linear-gradient( to left top, #fffeec, #aeddcd);
+    background: -moz-linear-gradient( to left top, #fffeec, #aeddcd);
+    background: -ms-linear-gradient( to left top, #fffeec, #aeddcd);
+    background: -o-linear-gradient( to left top, #fffeec, #aeddcd);
+    background: linear-gradient( to left top, #fffeec, #aeddcd);
+
+}
+
+body {
+
+    color: #414C54;
+
+    /* https://stackoverflow.com/questions/35132427/why-is-the-nav-bar-not-taking-up-full-width */
+
+    margin: 0; 
+    padding: 0;
+}
+
+h1 {
+
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+
+}
+
+/*#all {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgo8cmVjdCB3aWR0aD0nNScgaGVpZ2h0PSc1JyBmaWxsPScjZmZmJy8+CjxyZWN0IHdpZHRoPScxJyBoZWlnaHQ9JzEnIGZpbGw9JyNjY2MnLz4KPC9zdmc+"); background-repeat: repeat;
+
+}*/
+
+#navbar {
+  background-color: #414C54; /* Black background color */
+  font-family: 'Roboto Mono', monospace;
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+
+/*  display: inline-block;
+  float: none;*/
+
+}
+
+/* Style the navbar links */
+/*https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp*/
+
+#navbar a {
+
+    float: right;
+/*  display: block;
+*/  
+    color: #fffeec;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+
+}
+
+#navbar a:hover {
+  background-color: #81B1BC;
+  color: #fffeec;
+}
+
+#container {
+
+    margin: 15px;
+    padding: 15px;
+
+}
+
 #statusText {
 
-  position: absolute;
-  bottom: 50%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  margin: 0 auto;
-  color: #000;
-  font-size: 38px;
-  width: 128px;
-  overflow-x: visible;
-  cursor: default;
-  padding: 12px 0;
-  -webkit-user-select: none;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 38px;
+    width: 128px;
+    overflow-x: visible;
+    cursor: default;
+    padding: 12px 0;
+    -webkit-user-select: none;
 
 }

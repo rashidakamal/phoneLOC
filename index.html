@@ -8,17 +8,41 @@
         <title>Phone LOC</title>
         <meta name="description" content="Use a old-fashioned rotary phone to access documents from the Library of Congress.">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
 
     </head>
 
     <body>
 
+        <div id="navbar">
+              <a href="#home">About This Project</a>
+
+        </div>
+
         <div id="container">
-            <div id="statusText">GET &#x2764;</div>
+            <h1>Call Alexander</h1>
+
+            <!-- <div id="statusText">GET &#x2764;</div> -->
+        
         </div>
 
         <script src="/js/bluetoothPhone.js"></script>
         <script src="/js/app.js"></script>
+        <script>
+            // https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
+
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+              } else {
+                document.getElementById("navbar").style.top = "-50px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+
+        </script>
 
     </body>
 </html>

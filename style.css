@@ -16,7 +16,7 @@ html {
     background: -ms-linear-gradient( to left top, #fffeec, #aeddcd);
     background: -o-linear-gradient( to left top, #fffeec, #aeddcd);
     background: linear-gradient( to left top, #fffeec, #aeddcd);
-    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 
@@ -99,7 +99,7 @@ h1 {
 #intro_box {
 
     margin: 10px;
-    margin-top: 30px;
+    margin-top: 50px;
     padding-right: 10px;
     padding-left: 10px;
     grid-column-start:0;
@@ -110,7 +110,7 @@ h1 {
 #intro_text {
 
     margin: 10px;
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 20px;
     margin-bottom: 150px;
     grid-column-start: 2;
@@ -159,8 +159,78 @@ hr.style11 {
     font-size:12px;
     color: #fffeec;
     background-color: #D44A5A;
+     
 /*    border-color: #414C54; 
     border-style: solid;
     border-width: 1px;*/
 
 }
+
+.dial_button {
+
+    padding: 5px;
+    width: 70px;
+    font-size:12px;
+    color: #fffeec;
+    background-color: #D44A5A;
+    font-family:'Roboto Mono', monospace;
+    border-width: 0px;
+
+
+}
+
+.source {
+    font-size:8px;
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+.source a {
+    font-size:10px;
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+.scroll_section {
+
+/*    display: grid;
+    grid-template-columns: auto auto auto;*/
+
+
+}
+
+.timeline_event {
+
+    float: right;
+    margin-top: 20vh;
+    margin-right: 10vh;
+    border-color: #414C54; 
+    border-style: solid;
+    border-width: 2px;
+    padding: 0px;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 35vw;
+}
+
+th{
+
+    background-color: #414C54; 
+    font-family: 'Roboto Mono', monospace;
+    color: #fffeec;
+    font-weight: 700;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+td {
+    padding: 15px;
+    background-color: #fffeec;
+}
+
+
+

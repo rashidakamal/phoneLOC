@@ -7,8 +7,11 @@
 
         <title>Phone LOC</title>
         <meta name="description" content="Use a old-fashioned rotary phone to access documents from the Library of Congress.">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="/js/jquery.scrollify.js"></script>
+
 
     </head>
 
@@ -16,52 +19,318 @@
 
         <div id="navbar">
               <a href="#home">About This Project</a>
+        </div>
+
+        <div class="scroll_section">
+            <div id="container">
+                <div id="intro_box">
+                    <h1>Calling Alexander</h1>
+                    <img src="/assets/bell_and_phone.png" width="70%">
+                </div>
+
+                <div id="intro_text">
+                    Explore the timeline of Alexander Graham Bell's life and inventions!  
+                    <br><br>
+                    You'll notice that some items have a special note:
+                    <br><br><br><center><span class="dial">DIAL 123</span></center><br><br>
+
+                    This means that you'll have to dial that number on the rotary phone to see more items from that moment in time. 
+
+                    <br><br><br><br><br>
+
+                    <strong><span id="arrow">Scroll for more &#x2193;</span></strong> 
+                </div>
+
+                <!-- <center><img src="/assets/phone.png" width="25%"></center> -->
+                <!-- <div id="statusText">GET &#x2764;</div> -->
+            </div>
+        </div>
+
+        <div class="scroll_section">
+            <img src="/assets/transmitters.png" width="50%">
+            
+            <!-- Timeline Event -->
+            <div class="timeline_event">
+                <table><tr id="first">
+                        <th>March 6, 1875</th>
+                    </tr>
+                    <tr>
+                    <td>
+
+                            Improvement in transmitters and receivers for electric telegraphs: Automatic transmitters, e.g. controlled by perforated tape. 
+
+                            <br><br><br><center><span class="dial">DIAL 016</span> to see another app from this time. </center>
+                            <br><br>
+
+                            <strong><span class="source"><a href="https://patents.google.com/patent/US161739A/">Source: Google Patents</a></span></strong>
+                    </td>
+                    </tr>
+                    </table>
+            </div>
 
         </div>
 
-        <div id="container">
+         <div class="scroll_section">
+            <img src="/assets/telephone.png" width="50%">
+            
+            <!-- Timeline Event -->
+            <div class="timeline_event">
+                <table><tr id="first">
+                        <th>February 14, 1876</th>
+                    </tr>
+                    <tr>
+                    <td>
 
-            <div id="intro_box">
-                <h1>Calling Alexander</h1>
-                <img src="/assets/bell_and_phone.png" width="70%">
+                            Improvement in telegraphy: Transducers having an acoustic diaphragm of magnetisable material directly co-acting with electromagnet.  
+
+<!--                             <br><br><br>
+                            <center><span class="dial">DIAL 123</span></center>
+                            <br><br> -->
+
+                            <br><br><br>
+                            
+                             <button class="dial_button" onclick=" window.open('https://www.loc.gov/resource/magbell.25300102/?sp=14')">DIAL 453</button> to see Bell's notebooks. 
+                            
+                            <br><br>
+                            <button class="dial_button" onclick=" window.open('https://www.loc.gov/resource/magbell.12300204/?sp=1')">DIAL 632</button> to see an awkward letter. 
+                            
+                            <br><br>
+
+                            <strong><span class="source"><a href="https://patents.google.com/patent/US174465A/">Source: Google Patents</a></span></strong>
+                    </td>
+                    </tr>
+                    </table>
             </div>
 
-            <div id="intro_text">
-                Explore the timeline of Alexander Graham Bell's life and inventions!  
-                <br><br>
-                You'll notice that some items have a special note:
-                <br><br><center><span class="dial">DIAL 123</span></center><br>
-
-                This means that you'll have to dial that number on the rotary phone to see more items from that moment in time. 
-
-                <br><br><br>
-
-                <strong><span id="arrow">Scroll for more &#x2193;</span></strong> 
-            </div>
-
-            <!-- <center><img src="/assets/phone.png" width="25%"></center> -->
-            <!-- <div id="statusText">GET &#x2764;</div> -->
-        
         </div>
 
-        <hr class="style11">
-        <img src="/assets/receiver_patent.png" width="100%">
+        <div class="scroll_section">
+            <img src="/assets/telegraph_receiver.png" width="50%">
+            
+            <!-- Timeline Event -->
+            <div class="timeline_event">
+                <table><tr id="first">
+                        <th>April 8, 1876</th>
+                    </tr>
+                    <tr>
+                    <td>
+
+                            Improvement in telephonic telegraph-receivers: Channels characterised by the type of signal the signals being represented by different frequencies
+
+                            <br><br><br><center><span class="dial">DIAL 123</span></center>
+                            <br><br>
+
+                            <strong><span class="source"><a href="https://patents.google.com/patent/US178399A/">Source: Google Patents</a></span></strong>
+                    </td>
+                    </tr>
+                    </table>
+            </div>
+
+        </div>
+
+        <div class="scroll_section">
+            <img src="/assets/electric_telegraphy.png" width="50%">
+            
+            <!-- Timeline Event -->
+            <div class="timeline_event">
+                <table><tr id="first">
+                        <th>January 12, 1877</th>
+                    </tr>
+                    <tr>
+                    <td>
+
+                            Improvement in electric telegraphy: Two-way communication systems between a limited number of parties. 
+
+                            <!-- <br><br><br><center><span class="dial">DIAL 123</span></center>
+                            <br><br> -->
+
+                            <br><br><br>
+                            
+                             <button class="dial_button" onclick=" window.open('https://www.loc.gov/resource/magbell.25300102/?sp=14')">DIAL 535</button> to see Bell's notebooks. 
+                            
+                            <br><br>
+
+                            <strong><span class="source"><a href="https://patents.google.com/patent/US186787A/">Source: Google Patents</a></span></strong>
+                    </td>
+                    </tr>
+                    </table>
+            </div>
+
+        </div>
+
+        <div class="scroll_section">
+            <img src="/assets/speaking_phone.png" width="50%">
+            
+            <!-- Timeline Event -->
+            <div class="timeline_event">
+                <table><tr id="first">
+                        <th>February 8, 1878</th>
+                    </tr>
+                    <tr>
+                    <td>
+
+                            Improvement in speaking-telephones: Transducers of moving-armature or moving-core type. 
+
+                            <br><br><br><center><span class="dial">DIAL 123</span></center>
+                            <br><br>
+
+                            <strong><span class="source"><a href="https://patents.google.com/patent/US201488A/">Source: Google Patents</a></span></strong>
+                    </td>
+                    </tr>
+                    </table>
+            </div>
+
+        </div>
+
+        <div class="scroll_section">
+            <img src="/assets/speaking_telephones.png" width="50%">
+            
+            <!-- Timeline Event -->
+            <div class="timeline_event">
+                <table><tr id="first">
+                        <th>January 16, 1879</th>
+                    </tr>
+                    <tr>
+                    <td>
+
+                            Improvement in electric speaking-telephones: two-way communication systems between a limited number of parties
+
+                            <br><br><br><center><span class="dial">DIAL 123</span></center>
+                            <br><br>
+
+                            <strong><span class="source"><a href="https://patents.google.com/patent/US213090A/">Source: Google Patents</a></span></strong>
+                    </td>
+                    </tr>
+                    </table>
+            </div>
+
+        </div>
+
+        <div class="scroll_section">
+            <img src="/assets/call_bell.png" width="50%">
+            
+            <!-- Timeline Event -->
+            <div class="timeline_event">
+                <table><tr id="first">
+                        <th>March 13, 1880</th>
+                    </tr>
+                    <tr>
+                    <td>
+
+                            Electric call-bell: Lock-out or secrecy arrangements in party-line systems. 
+
+                            <br><br><br><center><span class="dial">DIAL 123</span></center>
+                            <br><br>
+
+                            <strong><span class="source"><a href="https://patents.google.com/patent/US238833A/">Source: Google Patents</a></span></strong>
+                    </td>
+                    </tr>
+                    </table>
+            </div>
+
+        </div>
+
+        <div class="scroll_section">
+            <img src="/assets/receiver_patent.png" width="50%">
+            
+            <!-- Timeline Event -->
+            <div class="timeline_event">
+                <table><tr id="first">
+                        <th>March 24, 1881</th>
+                    </tr>
+                    <tr>
+                    <td>
+
+                            Telephone receiver: modifications of amplifiers to reduce influence of noise generated by amplifying elements.
+
+                            <br><br><br><center><span class="dial">DIAL 123</span></center>
+                            <br><br>
+
+                            <strong><span class="source"><a href="https://patents.google.com/patent/US241184A/">Source: Google Patents</a></span></strong>
+                    </td>
+                    </tr>
+                    </table>
+            </div>
+
+        </div>
+
+        <div class="scroll_section">
+            <img src="/assets/hydroplane.png" width="50%">
+            
+            <!-- Timeline Event -->
+            <div class="timeline_event">
+                <table><tr id="first">
+                        <th>May 7, 1920</th>
+                    </tr>
+                    <tr>
+                    <td>
+
+                            Hydrodrome, hydroaeroplane, and the like: Hydrodynamic or hydrostatic features of hulls or of hydrofoils deriving additional lift from hydrodynamic forces of hydrofoil type with movable hydrofoils changing the angle of attack or the lift of the foil. 
+
+                            <br><br><br><center><span class="dial">DIAL 123</span></center>
+                            <br><br>
+
+                            <strong><span class="source"><a href="https://patents.google.com/patent/US1410877A/">Source: Google Patents</a></span></strong>
+                    </td>
+                    </tr>
+                    </table>
+            </div>
+
+        </div>
+
+        <div class="scroll_section">
+            <img src="/assets/flying_machine.png" width="50%">
+            
+            <!-- Timeline Event -->
+            <div class="timeline_event">
+                <table><tr id="first">
+                        <th>February 8, 1910</th>
+                    </tr>
+                    <tr>
+                    <td>
+
+                            Flying-machine: Control systems or transmitting systems for actuating flying-control surfaces, lift-increasing flaps, air brakes, or spoilers.  
+
+                            <br><br><br><center><span class="dial">DIAL 123</span></center>
+                            <br><br>
+
+                            <strong><span class="source"><a href="https://patents.google.com/patent/US1050601A/">Source: Google Patents</a></span></strong>
+                    </td>
+                    </tr>
+                    </table>
+            </div>
+
+        </div>
+
+        <div class="scroll_section">
+            <center><img src="/assets/phone.png" width="30%"></center>
+        </div>
 
         <script src="/js/bluetoothPhone.js"></script>
         <script src="/js/app.js"></script>
         <script>
-            // https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
 
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-              if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-              } else {
-                document.getElementById("navbar").style.top = "-50px";
-              }
-              prevScrollpos = currentScrollPos;
-            }
+            $(function() {
+                $.scrollify({
+
+                    section : ".scroll_section",
+                    interstitialSection : "#navbar",
+                    easing: "easeOutExpo",
+                    scrollSpeed: 1100,
+                    offset : 0,
+                    scrollbars: false,
+                    standardScrollElements: "",
+                    setHeights: true,
+                    overflowScroll: true,
+                    updateHash: true,
+                    touchScroll:false,
+                    before:function() {},
+                    after:function() {},
+                    afterResize:function() {},
+                    afterRender:function() {}
+
+                });
+            });
 
         </script>
 

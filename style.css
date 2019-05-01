@@ -2,6 +2,7 @@ html {
 
 
     /*https://stackoverflow.com/questions/16841323/making-gradient-background-fill-page-with-css*/
+    /*https://www.w3schools.com/css/css3_gradients.asp*/
 
     height: 100%;
     -webkit-background-size: cover;
@@ -15,15 +16,18 @@ html {
     background: -ms-linear-gradient( to left top, #fffeec, #aeddcd);
     background: -o-linear-gradient( to left top, #fffeec, #aeddcd);
     background: linear-gradient( to left top, #fffeec, #aeddcd);
+    background-repeat: no-repeat;
 
 }
 
 body {
 
     color: #414C54;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 12px;
 
     /* https://stackoverflow.com/questions/35132427/why-is-the-nav-bar-not-taking-up-full-width */
-
     margin: 0; 
     padding: 0;
 }
@@ -33,7 +37,6 @@ h1 {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     font-size: 38px;
-    text-align: center;
 
 }
 
@@ -83,9 +86,43 @@ h1 {
 
 #container {
 
-    margin: 15px;
-    padding: 15px;
+    margin: auto;
+    width: 70%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
 
+}
+
+#intro_box {
+
+    margin: 10px;
+    margin-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    grid-column-start:0;
+    grid-column-end: 1;
+    text-align: center;
+}
+
+#intro_text {
+
+    margin: 10px;
+    margin-top: 50px;
+    padding: 20px;
+    margin-bottom: 150px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #fffeec;
+    border-color: #414C54; 
+    border-style: solid;
+    border-width: 2px;
+}
+
+#arrow {
+    float: right;
 }
 
 #statusText {
@@ -103,5 +140,27 @@ h1 {
     cursor: default;
     padding: 12px 0;
     -webkit-user-select: none;
+
+}
+
+/* Source: https://codepen.io/ibrahimjabbari/pen/ozinB */
+hr.style11 {
+    height: 6px;
+    background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+    width: 30%;
+
+}
+
+.dial {
+
+    padding: 5px;
+    width: 60px;
+    font-size:12px;
+    color: #fffeec;
+    background-color: #D44A5A;
+/*    border-color: #414C54; 
+    border-style: solid;
+    border-width: 1px;*/
 
 }

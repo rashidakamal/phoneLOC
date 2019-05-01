@@ -5,7 +5,7 @@ console.log("App is starting up");
 
 statusText.addEventListener('click', function() {
 
-    statusText.textContent = 'Click to start...';
+    statusText.textContent = 'SCROLL FOR MORE';
     dials = [];
     bluetoothPhone.connect()
         .then(() => bluetoothPhone.startNotificationsDial().then(handleDial))

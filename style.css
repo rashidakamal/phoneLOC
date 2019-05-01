@@ -121,11 +121,25 @@ h1 {
     border-width: 2px;
 }
 
+#about_text {
+
+    margin: 10px;
+    margin-top: 70px;
+    padding: 20px;
+    margin-bottom: 150px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #fffeec;
+    border-color: #414C54; 
+    border-style: solid;
+    border-width: 2px;
+}
+
 #arrow {
     float: right;
 }
 
-#statusText {
+/*#statusText {
 
     position: absolute;
     bottom: 50%;
@@ -141,7 +155,7 @@ h1 {
     padding: 12px 0;
     -webkit-user-select: none;
 
-}
+}*/
 
 /* Source: https://codepen.io/ibrahimjabbari/pen/ozinB */
 hr.style11 {
@@ -232,5 +246,7 @@ td {
     background-color: #fffeec;
 }
 
-
+#footer {
+    padding-top: 40vh;
+}
 

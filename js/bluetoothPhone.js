@@ -84,19 +84,11 @@
 			let rate16Bits = flags & 0x1;
 
 			let result = {};
-			let index = 1;
+			let index = 0;
 
-			if (rate16Bits) {
-				let edited_val = value.getUint16(index, /*littleEndian=*/true);
-				result.digitVal = String.fromCharCode(edited_val)
-				index += 2;
+			let edited_val = value.getUint8(index);
 
-			} else {
-				let edited_val = value.getUint8(index);
-				result.digitVal = String.fromCharCode(edited_val)
-				index += 1;
-
-    		}
+			result.digitVal = String.fromCharCode(edited_val)
 
 			return result;
     	}
@@ -118,6 +110,8 @@
 			return characteristic.readValue()
 
 			.then(value => {
+
+				console.log(value);
 				// In Chrome 50+, a DataView is returned instead of an ArrayBuffer.
 				value = value.buffer ? value : new DataView(value);
 				return value;

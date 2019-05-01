@@ -22,7 +22,7 @@ void error(const __FlashStringHelper*err) {
   while (1);
 }
 
-uint8_t value = 50; 
+uint8_t value = 7; 
 
 void setup(void) {
 
@@ -99,17 +99,7 @@ void loop() {
   // service/characteristic structure; instead: naively broadcasting 
   // data. 
   
-////  for (uint8_t i = 0; i < 10; i++) {
-//      ble.print(50, HEX);
-////      delay(50);
-////    }
-
-      int heart_rate = random(50, 100);
-
-      ble.print( F("AT+GATTCHAR=") );
-      ble.print( hrmMeasureCharId );
-      ble.print( F(",00-") );
-      ble.println(heart_rate, HEX);
+      ble.println(value);
     
       /* Check if command executed OK */
       if ( !ble.waitForOK() )

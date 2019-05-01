@@ -21,8 +21,6 @@ function handleDial(dial) {
     dial.addEventListener('characteristicvaluechanged', event => {
 
         var dial = bluetoothPhone.parseDial(event.target.value);
-        statusText.innerHTML = dial.digitVal + ' &#x2764;' + 'rashida';
-
         dials.push(dial.digitVal);
 
         console.log(dial.digitVal);
